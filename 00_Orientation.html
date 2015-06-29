@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Orientation</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/serif.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section data-markdown>
+      <script type="text/template">
+        # Web UI Basic
+
+        김태곤
+      </script>
+    </section>
+    <section data-markdown>
+      <script type="text/template">
+        ## 저는...
+
+        - [Fancy](http://fancy.com)에 근무중인 프론트엔드 개발자입니다.
+        - 네이버에도 있었어요.
+        - 책도 번역하고 쓰고 다른 곳에 강의도 종종 나갑니다.
+        - gonom9 at gmail.com
+      </script>
+    </section>
+    <section data-markdown>
+      <script type="text/template">
+        ## 무엇을 배우나
+
+        - HTML, CSS, JavaScript 뭐 그런거
+        - 왜 그런걸 배우나
+      </script>
+    </section>
+    <section data-markdown>
+      <script type="text/template">
+        ## 어떻게 배우나
+
+        - 스파르타식으로 = 많은 과제
+        - 혼자 힘으로 설 수 있게 = 레퍼런스 위주
+        - 최종 목표는 바닥부터 페이스북 타임라인 만들기
+      </script>
+    </section>
+    <section data-markdown>
+      <script type="text/template">
+        ## 혹시 시간이 남으면
+
+        - CSS를 편하게 만드는 도구 [LESS](http://lesscss.org/)를 배워봅니다.
+        - [NodeJS](https://nodejs.org/)를 구경해봅니다.
+        - [Grunt](http://gruntjs.com/)나 [Gulp](http://gulpjs.com/)로 개발환경 구성하는 법을 배웁니다.
+      </script>
+    </section>
+    <section data-markdown>
+      <script type="text/template">
+        ## 미리 알아야 할 것
+
+        - 잘 안 알려줍니다.
+        - 에디터 사용법
+        - Git/GitHub 사용법 (특히 GitHub Pages 추가하는 법)
+      </script>
+    </section>
+    <section data-markdown>
+      <script type="text/template">
+        ## 성적은...
+
+        - 40% 과제
+        - 60% 기말 시험/프로젝트
+        - 어쨌든 제출하는 편이 좋습니다.
+      </script>
+    </section>
+  </div>
+</div>
+<script>
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  keyboard: true,
+  overview: true,
+  center: true,
+  hideAddressBar: true,
+  dependencies: [
+    // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+    // Interpret Markdown in <section> elements
+    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+    // Syntax highlight for <code> elements
+    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+    // Zoom in and out with Alt+click
+    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+
+    // Speaker notes
+    { src: 'reveal.js/plugin/notes/notes.js', async: true },
+
+    // Remote control your reveal.js presentation using a touch device
+    { src: 'plugin/remotes/remotes.js', async: true },
+
+    // MathJax
+    { src: 'plugin/math/math.js', async: true }
+  ]
+});
+</script>
+</body>
+</html>
